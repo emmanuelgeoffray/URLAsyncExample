@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "ofxThreadedImageLoader.h"
 
 class testApp : public ofBaseApp{
 
@@ -26,5 +27,7 @@ class testApp : public ofBaseApp{
     ofxXmlSettings xml;
     int loadXmlId;
     int x;
+		ofxThreadedImageLoader loader;
+		vector<ofImage> images;
 		
 };
